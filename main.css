@@ -1,35 +1,38 @@
 /*custom styling*/
+body {
+  color:#233237;
+}
 .navbar {
-  background-color:white;
   margin:0;
   margin-bottom:10px;
 }
-
 .navbar-brand {
   padding:0;
 }
-
 .navbar-brand img {
-height: 100%;
-padding-right:20px;
+height: 80%;
 padding-left: 20px;
+padding-right: 20px;
 }
-
 .hero {
-  background-size: cover;
-  min-height: 200px;
+  background-size:cover;
 }
-
-.custom {
-  min-height: 200px;
-}
-
-.findus {
-  min-height: 200px;
-}
-
 .about {
-  min-height: 200px;
+  min-height:200px;
+}
+.hero img {
+  width:100%;
+  }
+#allcupcakes {
+  padding: 10px;
+}
+#somecupcakes {
+  padding: 10px;
+}
+
+.thumbnails img {
+  width:20%;
+  height:auto;
 }
 /*display partial thumbnail grid with button for mobile view*/
  #somecupcakes {
@@ -38,6 +41,21 @@ padding-left: 20px;
   #allcupcakes {
     display:none;
 }
+.findus img {
+  padding: 50px;
+  padding-bottom:0px;
+}
+.about img {
+padding: 70px;
+}
+.abouttext {
+    padding: 60px;
+    padding-bottom: 0px;
+  }
+.panel-footer {
+    background-image:url("design/woodbackgroundcropped.jpg");
+    min-height:150px;
+ }
  
 /*for tablets and desktops, show full thumbnail grid and display larger image and slogan*/
 @media only screen and (min-width: 768px) {
@@ -47,26 +65,75 @@ padding-left: 20px;
   #somecupcakes {
     display:none;
   }
-  .hero {
-    min-height:300px;
+  .custom img {
+    min-height: 200px;
   }
+  #allcupcakes {
+    padding: 20px;
+  }
+  .thumbnails img {
+    width: 30%;
+    height:auto;
+  }
+  .findus img {
+    width: 80%;
+    padding: 20px;
+    margin-left: 25px;
+  }
+  .about {
+    width: 90%;
+  }
+  .about img {
+   padding: 10px;
+  }
+  .abouttext {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .panel-footer {
+    min-height: 250px;
+ }
 }
 /*for very large screens, increase height of sections for visual balance*/
 @media only screen and (min-width:1024px) {
-  .hero {
-    min-height:400px;
+  .navbar-brand {
+    min-height: 50px;
   }
-  .thumbnails {
-    min-height:300px;
+  .navbar {
+    padding-top: 10px;
+  }
+  .thumbnails img {
+    width: 60%;
+    height:auto;
   }
   .about {
     min-height:300px;
+    padding-bottom:20px;
+  }
+  .findus img {
+    width: 100%;
+    padding: 75px;
+  }
+  .about img {
+    width:100%;
   }
   .custom {
     min-height:300px;
   }
   .findus {
     min-height:300px;
+  }
+  .abouttext {
+    padding: 80px;
+    padding-left:120px;
+    padding-bottom: 120px;
+  }
+  .panel-footer {
+    min-height: 300px;
+  }
+  .panel-footer img {
+    margin:auto;
+    width: 10%;
   }
 }
  
