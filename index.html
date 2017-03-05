@@ -28,7 +28,6 @@
           <span class="icon-bar"></span> 
         </button>
         <!--logo-->
-        <a class="navbar-brand"><img class="img-responsive" src="design/JemcakesLogo2.png" alt="Logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -49,8 +48,12 @@
   </nav>
   <!--display image and slogan-->
   <div class="container-fluid">
+    <div class="row logo">
+      <p>Jemcakes</p>
+    </div>
     <div class="row hero">
-      <div class="col-sm-12"><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero"><p>Art | Baked</p>
+      <div class="col-sm-12"><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero">
+        <p id="slogan">Art | Baked</p>
       </div>
     </div>
     <!--responsive thumbnail grid of products-->
@@ -96,15 +99,15 @@
     </div>
     <div class="row thumbnails" id=somecupcakes>
       <div class="col-sm-6 col-md-4">
-        <a class="thumbnail"data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake1">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake1">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a class="thumbnail"data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake2">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake2">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a class="thumbnail"data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake3">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake3">
         </a>
       </div>
       <!--button to show additional thumbnails in mobile view only-->
@@ -114,35 +117,34 @@
     </div>
     <!--information on custom orders-->
     <div class="row custom" id="customorder">
-      <div class="col-sm-12"><img class="img-responsive" src="design/customordercropped.jpg" alt="Custom"><p>Need a custom design for a special occasion?
-Contact us.Deliveries available.</p></div>
+      <div class="col-sm-12"><img class="img-responsive" src="design/customordercropped.jpg" alt="Custom">
+        <p>Need a custom design for a special occasion? Contact us.Deliveries available.</p>
+      </div>
     </div>
     <!--Find location of truck using calendar-->
     <div class="row findus" id="findus">
-      <div class="col-sm-6"><img class="img-responsive" src="design/foodtruckcropped.jpg" alt="Truck"></div>
-      <div class="col-sm-6" id="location">
-        <div class="row" id="title">
-          <p>Find Jemcakes!</p>
-        </div>
-      </div>
+      <p id="title">Find Jemcakes</p>
     </div>
+    <div class="row findus"><img class="img-responsive" src="design/foodtruckcropped.jpg" alt="Truck"></div>
+    <div class="row findus" id="location"></div>
+    <hr>
     <!--about our company-->
     <div class="row about" id="about">
       <div class="col-sm-6 abouttext">Founder Jada Mackenzie started baking cupcakes in elementary school. As her business thrived and expanded, Jada proudly launched her own mobile bakery. A portion of the proceeds from every cupcake goes to the World Wildlife fund.
       </div>
       <div class="col-sm-2"></div>
-      <div class="col-sm-4"><img class="img-responsive img-circle" src="design/Jadacropped.jpg" id="Jada" alt="Headshot"></div>
+      <div class="col-sm-4 aboutimage"><img class="img-responsive img-circle" src="design/Jadacropped.jpg" id="Jada" alt="Headshot"></div>
     </div>
   </div>
   <!--responsive footer-->
-  <div class="panel-footer">
-    <!--3rd party libraries-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="date.format.js"></script>
-    <script src="main.js"></script>
-    <!--polyfill that enables responsive web design in browsers that don't support media queries-->
-    <script src="respond.min.js"></script>
+  <div class="panel-footer"></div>
+  <!--3rd party libraries-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="date.format.js"></script>
+  <script src="main.js"></script>
+  <!--polyfill that enables responsive web design in browsers that don't support media queries-->
+  <script src="respond.min.js"></script>
 </body>
 
 </html>
