@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Playfair+Display" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
@@ -49,47 +50,61 @@
   <!--display image and slogan-->
   <div class="container-fluid">
     <div class="row hero">
-      <div class="col-sm-12"><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero">
+      <div class="col-sm-12"><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero"><p>Art | Baked</p>
       </div>
     </div>
     <!--responsive thumbnail grid of products-->
     <div class="row thumbnails" id=allcupcakes>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake1">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake1">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake2">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Vanilla Cupcake with Lavendar Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake2">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="Cupcake3">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Cupcake with Lemon Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake3">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="Cupcake4">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Vanilla Cupcake with Cinnamon Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake4">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="Cupcake5">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Cupcake with Raspberry Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake5">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="Cupcake6">
+        <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Vanilla Cupcake with Chocolate Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="testcupcake">
         </a>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal=lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">This Selection</h4>
+          </div>
+          <div class="modal-body" id=testingcupcake>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row thumbnails" id=somecupcakes>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake1">
+        <a class="thumbnail"data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake1">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake2">
+        <a class="thumbnail"data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake2">
         </a>
       </div>
       <div class="col-sm-6 col-md-4">
-        <a href="" class="thumbnail"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake3">
+        <a class="thumbnail"data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive img-circle" src="design/gridcupcake2.jpg" alt="Cupcake3">
         </a>
       </div>
       <!--button to show additional thumbnails in mobile view only-->
@@ -99,16 +114,21 @@
     </div>
     <!--information on custom orders-->
     <div class="row custom" id="customorder">
-      <div class="col-sm-12"><img class="img-responsive" src="design/customordercropped.jpg" alt="Custom"></div>
+      <div class="col-sm-12"><img class="img-responsive" src="design/customordercropped.jpg" alt="Custom"><p>Need a custom design for a special occasion?
+Contact us.Deliveries available.</p></div>
     </div>
     <!--Find location of truck using calendar-->
     <div class="row findus" id="findus">
       <div class="col-sm-6"><img class="img-responsive" src="design/foodtruckcropped.jpg" alt="Truck"></div>
-      <div class="col-sm-6"></div>
+      <div class="col-sm-6" id="location">
+        <div class="row" id="title">
+          <p>Find Jemcakes!</p>
+        </div>
+      </div>
     </div>
     <!--about our company-->
     <div class="row about" id="about">
-      <div class="col-sm-6 abouttext">Founder Jada Mackenzie started baking cupcakes in elementary school. As her business thrived and expanded, Jada was thrilled to be able to invest in her own mobile bakery. A portion of the proceeds from every cupcake goes to the World Wildlife fund.
+      <div class="col-sm-6 abouttext">Founder Jada Mackenzie started baking cupcakes in elementary school. As her business thrived and expanded, Jada proudly launched her own mobile bakery. A portion of the proceeds from every cupcake goes to the World Wildlife fund.
       </div>
       <div class="col-sm-2"></div>
       <div class="col-sm-4"><img class="img-responsive img-circle" src="design/Jadacropped.jpg" id="Jada" alt="Headshot"></div>
@@ -119,6 +139,7 @@
     <!--3rd party libraries-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="date.format.js"></script>
     <script src="main.js"></script>
     <!--polyfill that enables responsive web design in browsers that don't support media queries-->
     <script src="respond.min.js"></script>
