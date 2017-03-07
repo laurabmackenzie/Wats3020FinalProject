@@ -1,8 +1,4 @@
-    /*custom styling*/
-    
-    body {
-      color: #28170D;
-    }
+  /*custom styling*/
     
     .navbar {
       margin: 0;
@@ -10,6 +6,7 @@
     }
     
     .navbar-default .navbar-nav>.active>a {
+      background-color: transparent;
       background-color: transparent;
     }
     
@@ -83,7 +80,7 @@
       text-align: center;
       font-size: 18px;
       padding-top: 60px;
-      font-family: Playfair Display, serif;
+      font-family: 'Cinzel', serif;
     }
     
     #customorder p {
@@ -110,9 +107,45 @@
       padding-bottom: 30px;
     }
     
+    div #contact {
+      font-size: 12px;
+      text-align: center;
+      color: #00CED1;
+    }
+    
+    div #logo {
+      font-size: 24px;
+      text-align: center;
+    }
+    
+    div #copyright {
+      font-size: 8px;
+      text-align: center;
+      padding: 0;
+      color: #28170D;
+    }
+    
+    .panel-footer ul {
+      list-style-type: none;
+      font-size: 12px;
+      text-align: center;
+      padding: 0;
+    }
+    
+    .panel-footer li {
+      display: inline;
+      color: #00CED1;
+    }
+    
+    .panel-footer a {
+      color: #00CED1;
+    }
+    
     .panel-footer {
       background-image: url("design/woodbackgroundcropped.jpg");
-      min-height: 150px;
+      min-height: 100px;
+      color: #28170D;
+      font-family: 'Cinzel', serif;
     }
     /*for phones in landscape orientation*/
     
@@ -132,7 +165,7 @@
       }
       #customorder p {
         font-family: 'Cinzel', serif;
-        margin-top: -150px;
+        margin-top: -140px;
         margin-bottom: 100px;
         color: white;
         font-size: 16px;
@@ -230,7 +263,36 @@
         padding-top: 75px;
         padding-right: 150px;
       }
+      div #contact {
+        font-size: 16px;
+        text-align: center;
+        color: #00CED1;
+      }
+      div #logo {
+        font-size: 36px;
+        text-align: center;
+      }
+      div #copyright {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+        color: #28170D;
+      }
+      .panel-footer ul {
+        list-style-type: none;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+      }
+      .panel-footer li {
+        display: inline;
+        color: #00CED1;
+      }
+      .panel-footer a {
+        color: #00CED1;
+      }
       .panel-footer {
+        padding-top: 25px;
         min-height: 250px;
       }
     }
@@ -254,7 +316,7 @@
         width: 45%;
         height: auto;
       }
-       #customorder p {
+      #customorder p {
         margin-top: -200px;
         margin-bottom: 100px;
         font-size: 24px;
@@ -290,9 +352,37 @@
       }
       .aboutimage {
         padding-bottom: 75px;
-       
+      }
+      div #contact {
+        font-size: 18px;
+        text-align: center;
+        color: #00CED1;
+      }
+      div #logo {
+        font-size: 42px;
+        text-align: center;
+      }
+      div #copyright {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+        color: #28170D;
+      }
+      .panel-footer ul {
+        list-style-type: none;
+        font-size: 18px;
+        text-align: center;
+        padding: 0;
+      }
+      .panel-footer li {
+        display: inline;
+        color: #00CED1;
+      }
+      .panel-footer a {
+        color: #00CED1;
       }
       .panel-footer {
+        padding-top: 30px;
         min-height: 280px;
       }
     }
@@ -312,7 +402,7 @@
       }
       .logo {
         font-size: 48px;
-        }
+      }
       .thumbnails img {
         width: 60%;
         height: auto;
@@ -321,19 +411,16 @@
         min-height: 300px;
         padding-bottom: 20px;
       }
-      .custom {
-        min-height: 300px;
-      }
       #customorder p {
-        margin-top: -350px;
-        margin-bottom: 150px;
+        margin-top: -300px;
+        margin-bottom: 100px;
         font-size: 36px;
         padding-left: 100px;
         padding-right: 700px;
       }
       .findus img {
         width: 100%;
-        padding: 0 400px 75px 400px;
+        padding: 0 400px 25px 400px;
       }
       #location {
         font-size: 24px;
@@ -341,26 +428,50 @@
       }
       .abouttext {
         font-size: 24px;
-        padding-top: 100px;
-        padding-left: 200px;
+        padding: 100px 0 0 200px;
       }
       .about img {
         margin: 0 auto;
         max-width: 250px;
       }
       .aboutimage {
-        padding-bottom: 40px;
+        padding-bottom: 90px;
       }
-       #title {
+      #title {
         font-size: 36px;
-        padding-top: 90px;
+        padding-top: 60px;
       }
-      
+       div #contact {
+        font-size: 18px;
+        text-align: center;
+        color: #00CED1;
+      }
+      div #logo {
+        font-size: 42px;
+        text-align: center;
+      }
+      div #copyright {
+        font-size: 12px;
+        text-align: center;
+        padding: 0;
+        color: #28170D;
+      }
+      .panel-footer ul {
+        list-style-type: none;
+        font-size: 18px;
+        text-align: center;
+        padding: 0;
+      }
+      .panel-footer li {
+        display: inline;
+        color: #00CED1;
+      }
+      .panel-footer a {
+        color: #00CED1;
+      }
       .panel-footer {
+        padding-top: 40px;
         min-height: 300px;
       }
-      .panel-footer img {
-        margin: auto;
-        width: 10%;
-      }
     }
+  }
