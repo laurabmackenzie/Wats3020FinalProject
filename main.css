@@ -1,477 +1,547 @@
-  /*custom styling*/
-    
-    .navbar {
-      margin: 0;
-      margin-bottom: 10px;
-    }
-    
-    .navbar-default .navbar-nav>.active>a {
-      background-color: transparent;
-      background-color: transparent;
-    }
-    
-    .hero {
-      background-size: cover;
-    }
-    
-    .about {
-      min-height: 200px;
-    }
-    
-    .hero img {
-      width: 100%;
-    }
-    
-    .hero #slogan {
-      text-align: center;
-      font-size: 16px;
-      color: #28170D;
-      font-family: 'Cinzel', serif;
-      margin-top: -25px;
-    }
-    
-    .logo {
-      text-align: center;
-      font-size: 16px;
-      color: #28170D;
-      font-family: 'Cinzel', serif;
-    }
-    
-    #allcupcakes {
-      padding: 10px;
-    }
-    
-    #somecupcakes {
-      padding: 10px;
-    }
-    
-    .thumbnails img {
-      width: 20%;
-      height: auto;
-    }
-    /*display partial thumbnail grid with button for mobile view*/
-    
-    #somecupcakes {
-      display: block;
-    }
-    
-    #allcupcakes {
-      display: none;
-    }
-    
-    .findus img {
-      width: 100%;
-      padding: 80px;
-      padding-top: 0px;
-    }
-    
-    #location {
-      font-family: Playfair Display, serif;
-      color: #28170D;
-      text-align: center;
-      padding-bottom: 30px;
-    }
-    
-    #location .row {
-      margin-bottom: 10px;
-    }
-    
-    #title {
-      text-align: center;
-      font-size: 18px;
-      padding-top: 60px;
-      font-family: 'Cinzel', serif;
-    }
-    
-    #customorder p {
-      font-family: 'Cinzel', serif;
-      margin-top: -80px;
-      color: white;
-      font-size: 10px;
-      padding-left: 20px;
-      padding-right: 150px;
-    }
-    
-    .about img {
-      margin: 0 auto;
-      max-width: 110px;
-    }
-    
-    .abouttext {
-      padding: 50px 60px 40px 80px;
-      font-family: "Playfair Display, serif";
-      font-size: 16px;
-    }
-    
-    .aboutimage {
-      padding-bottom: 30px;
-    }
-    
-    div #contact {
-      font-size: 12px;
-      text-align: center;
-      color: #00CED1;
-    }
-    
-    div #logo {
-      font-size: 24px;
-      text-align: center;
-    }
-    
-    div #copyright {
-      font-size: 8px;
-      text-align: center;
-      padding: 0;
-      color: #28170D;
-    }
-    
-    .panel-footer ul {
-      list-style-type: none;
-      font-size: 12px;
-      text-align: center;
-      padding: 0;
-    }
-    
-    .panel-footer li {
-      display: inline;
-      color: #00CED1;
-    }
-    
-    .panel-footer a {
-      color: #00CED1;
-    }
-    
-    .panel-footer {
-      background-image: url("design/woodbackgroundcropped.jpg");
-      min-height: 100px;
-      color: #28170D;
-      font-family: 'Cinzel', serif;
-    }
-    /*for phones in landscape orientation*/
-    
-    @media only screen and (max-width:768px) and (orientation:landscape) {
-      .hero #slogan {
-        text-align: center;
-        font-size: 24px;
-        color: #28170D;
-        font-family: 'Cinzel', serif;
-        margin-top: -40px;
-      }
-      .logo {
-        text-align: center;
-        font-size: 24px;
-        color: #28170D;
-        font-family: 'Cinzel', serif;
-      }
-      #customorder p {
-        font-family: 'Cinzel', serif;
-        margin-top: -140px;
-        margin-bottom: 100px;
-        color: white;
-        font-size: 16px;
-        padding-left: 50px;
-        padding-right: 300px;
-      }
-      .findus img {
-        padding: 180px;
-        padding-top: 0px;
-        padding-bottom: 40px;
-      }
-      .findus #location {
-        font-family: Playfair Display, serif;
-        color: #28170D;
-        padding-left: 200px;
-        padding-right: 60px;
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-      .findus #title {
-        color: #28170D;
-        text-align: center;
-        font-size: 24px;
-        padding: 10px;
-        font-family: Playfair Display, serif;
-      }
-      .abouttext {
-        padding-left: 150px;
-        padding-right: 150px;
-        font-family: "Playfair Display, serif";
-        font-size: 16px;
-      }
-    }
-    /*for tablets, show full thumbnail grid and display larger images*/
-    
-    @media only screen and (min-width: 768px) {
-      .hero #slogan {
-        font-size: 24px;
-        margin-top: -40px;
-      }
-      .logo {
-        font-size: 24px;
-      }
-      #allcupcakes {
-        display: block;
-      }
-      #somecupcakes {
-        display: none;
-      }
-      .custom img {
-        min-height: 200px;
-      }
-      #allcupcakes {
-        padding: 20px;
-      }
-      .thumbnails img {
-        width: 30%;
-        height: auto;
-      }
-      #customorder p {
-        margin-top: -180px;
-        margin-bottom: 100px;
-        font-size: 24px;
-        padding-left: 35px;
-        padding-right: 400px;
-      }
-      .findus img {
-        width: 100%;
-        padding: 0 200px 50px 200px;
-      }
-      #location {
-        font-size: 18px;
-        padding: 0px 50px 40px 50px;
-      }
-      #title {
-        text-align: center;
-        font-size: 24px;
-        padding-top: 0;
-      }
-      .abouttext {
-        font-size: 14px;
-        padding: 0px;
-        padding-left: 75px;
-        padding-bottom: 100px;
-      }
-      .abouttext {
-        padding: 50px 60px 40px 80px;
-        font-size: 18px;
-      }
-      .about img {
-        margin: 0 auto;
-        max-width: 150px;
-      }
-      .aboutimage {
-        padding-top: 75px;
-        padding-right: 150px;
-      }
-      div #contact {
-        font-size: 16px;
-        text-align: center;
-        color: #00CED1;
-      }
-      div #logo {
-        font-size: 36px;
-        text-align: center;
-      }
-      div #copyright {
-        font-size: 12px;
-        text-align: center;
-        padding: 0;
-        color: #28170D;
-      }
-      .panel-footer ul {
-        list-style-type: none;
-        font-size: 16px;
-        text-align: center;
-        padding: 0;
-      }
-      .panel-footer li {
-        display: inline;
-        color: #00CED1;
-      }
-      .panel-footer a {
-        color: #00CED1;
-      }
-      .panel-footer {
-        padding-top: 25px;
-        min-height: 250px;
-      }
-    }
-    /*for desktops, a few styling tweaks*/
-    
-    @media only screen and (min-width: 992px) and (max-width: 1199px) {
-      .hero #slogan {
-        font-size: 36px;
-        margin-top: -60px;
-      }
-      .logo {
-        font-size: 36px;
-      }
-      .custom img {
-        min-height: 250px;
-      }
-      #allcupcakes {
-        padding: 40px;
-      }
-      .thumbnails img {
-        width: 45%;
-        height: auto;
-      }
-      #customorder p {
-        margin-top: -200px;
-        margin-bottom: 100px;
-        font-size: 24px;
-        padding-left: 35px;
-        padding-right: 450px;
-      }
-      .findus img {
-        width: 100%;
-        padding: 0 300px 75px 300px;
-      }
-      #location {
-        font-size: 18px;
-        padding: 0px 50px 40px 50px;
-      }
-      #title {
-        font-size: 36px;
-        padding-top: 50px;
-        padding-bottom: 20px;
-      }
-      .abouttext {
-        font-size: 18px;
-        padding: 0px;
-        padding-left: 75px;
-        padding-bottom: 100px;
-      }
-      .abouttext {
-        font-size: 18px;
-        padding-top: 90px;
-      }
-      .about img {
-        margin: 0 auto;
-        max-width: 200px;
-      }
-      .aboutimage {
-        padding-bottom: 75px;
-      }
-      div #contact {
-        font-size: 18px;
-        text-align: center;
-        color: #00CED1;
-      }
-      div #logo {
-        font-size: 42px;
-        text-align: center;
-      }
-      div #copyright {
-        font-size: 12px;
-        text-align: center;
-        padding: 0;
-        color: #28170D;
-      }
-      .panel-footer ul {
-        list-style-type: none;
-        font-size: 18px;
-        text-align: center;
-        padding: 0;
-      }
-      .panel-footer li {
-        display: inline;
-        color: #00CED1;
-      }
-      .panel-footer a {
-        color: #00CED1;
-      }
-      .panel-footer {
-        padding-top: 30px;
-        min-height: 280px;
-      }
-    }
-    /*for very large screens, increase height of sections for visual balance*/
-    
-    @media only screen and (min-width: 1200px) {
-      .navbar-brand {
-        min-height: 50px;
-      }
-      .navbar {
-        padding-top: 10px;
-      }
-      .hero #slogan {
-        font-size: 48px;
-        color: #28170D;
-        margin-top: -80px;
-      }
-      .logo {
-        font-size: 48px;
-      }
-      .thumbnails img {
-        width: 60%;
-        height: auto;
-      }
-      .about {
-        min-height: 300px;
-        padding-bottom: 20px;
-      }
-      #customorder p {
-        margin-top: -300px;
-        margin-bottom: 100px;
-        font-size: 36px;
-        padding-left: 100px;
-        padding-right: 700px;
-      }
-      .findus img {
-        width: 100%;
-        padding: 0 400px 25px 400px;
-      }
-      #location {
-        font-size: 24px;
-        padding: 0px 200px 10px 150px;
-      }
-      .abouttext {
-        font-size: 24px;
-        padding: 100px 0 0 200px;
-      }
-      .about img {
-        margin: 0 auto;
-        max-width: 250px;
-      }
-      .aboutimage {
-        padding-bottom: 90px;
-      }
-      #title {
-        font-size: 36px;
-        padding-top: 60px;
-      }
-       div #contact {
-        font-size: 18px;
-        text-align: center;
-        color: #00CED1;
-      }
-      div #logo {
-        font-size: 42px;
-        text-align: center;
-      }
-      div #copyright {
-        font-size: 12px;
-        text-align: center;
-        padding: 0;
-        color: #28170D;
-      }
-      .panel-footer ul {
-        list-style-type: none;
-        font-size: 18px;
-        text-align: center;
-        padding: 0;
-      }
-      .panel-footer li {
-        display: inline;
-        color: #00CED1;
-      }
-      .panel-footer a {
-        color: #00CED1;
-      }
-      .panel-footer {
-        padding-top: 40px;
-        min-height: 300px;
-      }
-    }
+/*custom styling*/
+body { 
+ padding-top: 70px; 
+}
+
+.navbar {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  background-color: transparent;
+  background-color: transparent;
+}
+.hero {
+  background-size: cover;
+}
+.about {
+  min-height: 200px;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero #slogan {
+  text-align: center;
+  font-size: 16px;
+  color: #28170D;
+  font-family: 'Cinzel', serif;
+  margin-top: -25px;
+}
+
+.logo {
+  text-align: center;
+  font-size: 16px;
+  color: #28170D;
+  font-family: 'Cinzel', serif;
+}
+div #showfewercupcakes {
+    text-align:center;
   }
+div #showmorecupcakes {
+    text-align:center;
+  }
+}
+.btn-primary:hover {
+  background-color: #00CED1;
+  border-color: #00CED1;
+}
+.btn-primary:active {
+  background-color: #00CED1;
+  border-color: #00CED1;
+}
+.btn-primary:focus {
+  background-color: #00CED1;
+  border-color: #00CED1;
+}
+.row a.thumbnail:hover {
+  color:#28170D;
+  border-color:#28170D;
+  cursor:pointer;
+  
+}
+.row a.thumbnail {
+}
+.modal-body {
+  text-align:center;
+  color:#28170D;
+}
+.modal-body a {
+  color:#28170D;
+}
+.modal-body a:hover {
+  border-color:#28170D;
+  text-decoration:none;
+}
+
+#allcupcakes {
+  padding: 10px;
+}
+
+#somecupcakes {
+  padding: 10px;
+}
+
+.thumbnails img {
+  width: 20%;
+  height: auto;
+}
+
+
+/*display partial thumbnail grid with button for mobile view*/
+
+#somecupcakes {
+  display: block;
+}
+
+#allcupcakes {
+  display: none;
+}
+#locations {
+  display:block;
+}
+#locations10 {
+  display:none;
+}
+
+.btn {
+  color: white;
+  background-color: #28170D;
+  border-color: #28170D;
+}
+
+div #showmoredates {
+  text-align: center;
+  padding: 10px;
+}
+div #showfewerdates {
+  text-align: center;
+  padding: 10px;
+}
+
+.findus img {
+  width: 100%;
+  padding: 80px;
+  padding-top: 0px;
+}
+
+#location {
+  font-family: Playfair Display, serif;
+  color: #28170D;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#location .row {
+  margin-bottom: 10px;
+}
+
+#title {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 60px;
+  font-family: 'Cinzel', serif;
+}
+
+#customorder p {
+  font-family: 'Cinzel', serif;
+  margin-top: -80px;
+  color: white;
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 150px;
+}
+
+.about img {
+  margin: 0 auto;
+  max-width: 110px;
+}
+
+.abouttext {
+  padding: 50px 60px 40px 80px;
+  font-family: "Playfair Display, serif";
+  font-size: 16px;
+}
+
+.aboutimage {
+  padding-bottom: 30px;
+}
+
+div #contact {
+  font-size: 12px;
+  text-align: center;
+  color: #00CED1;
+}
+
+div #logo {
+  font-size: 24px;
+  text-align: center;
+}
+
+div #copyright {
+  font-size: 8px;
+  text-align: center;
+  padding: 0;
+  color: #28170D;
+}
+
+.panel-footer ul {
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  padding: 0;
+}
+
+.panel-footer li {
+  display: inline;
+  color: #00CED1;
+}
+
+.panel-footer a {
+  color: #00CED1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #28170D;
+}
+
+.panel-footer {
+  background-image: url("design/woodbackgroundcropped.jpg");
+  min-height: 100px;
+  color: #28170D;
+  font-family: 'Cinzel', serif;
+}
+
+
+/*for phones in landscape orientation*/
+
+@media only screen and (max-width:768px) and (orientation:landscape) {
+  .hero #slogan {
+    text-align: center;
+    font-size: 24px;
+    color: #28170D;
+    font-family: 'Cinzel', serif;
+    margin-top: -40px;
+  }
+  .logo {
+    text-align: center;
+    font-size: 24px;
+    color: #28170D;
+    font-family: 'Cinzel', serif;
+  }
+  #customorder p {
+    font-family: 'Cinzel', serif;
+    margin-top: -140px;
+    margin-bottom: 100px;
+    color: white;
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 300px;
+  }
+  .findus img {
+    padding: 180px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+  }
+  .findus #location {
+    font-family: Playfair Display, serif;
+    color: #28170D;
+    padding-left: 200px;
+    padding-right: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .findus #title {
+    color: #28170D;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    font-family: Playfair Display, serif;
+  }
+  .abouttext {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: "Playfair Display, serif";
+    font-size: 16px;
+  }
+}
+
+
+/*for tablets, show full thumbnail grid and display larger images*/
+
+@media only screen and (min-width: 768px) {
+  .hero #slogan {
+    font-size: 24px;
+    margin-top: -40px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  #allcupcakes {
+    display: block;
+  }
+  #somecupcakes {
+    display: none;
+  }
+ #showfewercupcakes .btn {
+    visibility: hidden;
+  }
+  .custom img {
+    min-height: 200px;
+  }
+  #allcupcakes {
+    padding: 20px;
+  }
+  .thumbnails img {
+    width: 30%;
+    height: auto;
+  }
+  #customorder p {
+    margin-top: -180px;
+    margin-bottom: 100px;
+    font-size: 24px;
+    padding-left: 35px;
+    padding-right: 400px;
+  }
+  .findus img {
+    width: 100%;
+    padding: 0 200px 50px 200px;
+  }
+  div #showalldates {
+    text-align: center;
+    padding: 20px;
+  }
+  #location {
+    font-size: 18px;
+    padding: 0px 50px 40px 50px;
+  }
+  #title {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 0;
+  }
+  .abouttext {
+    font-size: 14px;
+    padding: 0px;
+    padding-left: 75px;
+    padding-bottom: 100px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .abouttext {
+    padding: 50px 10px 60px 70px;
+    font-size: 18px;
+  }
+  .about img {
+    margin: 0 auto;
+    max-width: 150px;
+  }
+  .aboutimage {
+    padding-top: 75px;
+    padding-right: 150px;
+  }
+  div #contact {
+    font-size: 16px;
+  }
+  div #logo {
+    font-size: 36px;
+  }
+  div #copyright {
+    font-size: 12px;
+    padding: 0;
+  }
+  .panel-footer ul {
+    font-size: 16px;
+    padding: 0;
+  }
+  .panel-footer {
+    padding-top: 25px;
+    min-height: 250px;
+  }
+}
+
+
+/*for desktops, a few styling tweaks*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero #slogan {
+    font-size: 36px;
+    margin-top: -60px;
+  }
+  .logo {
+    font-size: 36px;
+  }
+  .custom img {
+    min-height: 250px;
+  }
+  #allcupcakes {
+    padding: 40px;
+  }
+  #showfewercupcakes .btn {
+    visibility: hidden;
+  }
+  .thumbnails img {
+    width: 45%;
+    height: auto;
+  }
+  #customorder p {
+    margin-top: -200px;
+    margin-bottom: 100px;
+    font-size: 24px;
+    padding-left: 35px;
+    padding-right: 450px;
+  }
+  .findus img {
+    width: 100%;
+    padding: 0 300px 75px 300px;
+  }
+  div #showalldates {
+    text-align: center;
+    padding: 20px;
+  }
+  #location {
+    font-size: 18px;
+    padding: 0px 50px 40px 50px;
+  }
+  #title {
+    font-size: 36px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  .abouttext {
+    font-size: 18px;
+    padding: 90px 0px 100px 125px;
+  }
+  .about img {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  .aboutimage {
+    padding-bottom: 75px;
+  }
+  div #contact {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  div #logo {
+    font-size: 42px;
+    text-align: center;
+  }
+  div #copyright {
+    font-size: 12px;
+    padding: 0;
+  }
+  .panel-footer ul {
+    font-size: 18px;
+    padding: 0;
+  }
+  .panel-footer li {
+    display: inline;
+  }
+  .panel-footer {
+    padding-top: 30px;
+    min-height: 280px;
+  }
+}
+
+
+/*for very large screens, increase height of sections for visual balance*/
+
+@media only screen and (min-width: 1200px) {
+  .navbar-brand {
+    min-height: 50px;
+  }
+  .navbar {
+    padding-top: 10px;
+  }
+  .hero #slogan {
+    font-size: 48px;
+    color: #28170D;
+    margin-top: -80px;
+  }
+  .logo {
+    font-size: 48px;
+  }
+  .thumbnails img {
+    width: 60%;
+    height: auto;
+  }
+  #showfewercupcakes .btn {
+    visibility: hidden;
+  }
+  .about {
+    min-height: 300px;
+    padding-bottom: 20px;
+  }
+  #customorder p {
+    margin-top: -300px;
+    margin-bottom: 100px;
+    font-size: 36px;
+    padding-left: 100px;
+    padding-right: 700px;
+  }
+  .findus img {
+    width: 100%;
+    padding: 0 400px 25px 400px;
+  }
+  div #showalldates {
+    text-align: center;
+    padding: 40px;
+  }
+  .btn {
+    font-size:16px;
+  }
+  #location {
+    font-size: 18px;
+    padding: 0px 200px 10px 150px;
+  }
+  .abouttext {
+    font-size: 18px;
+    padding: 100px 0 0 230px;
+  }
+  .about img {
+    margin: 0 auto;
+    max-width: 250px;
+  }
+  .aboutimage {
+    padding-bottom: 90px;
+  }
+  #title {
+    font-size: 36px;
+    padding-top: 60px;
+  }
+  div #contact {
+    font-size: 18px;
+  }
+  div #logo {
+    font-size: 42px;
+    text-align: center;
+  }
+  div #copyright {
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+  }
+  .panel-footer ul {
+    list-style-type: none;
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+  }
+  .panel-footer li {
+    display: inline;
+  }
+  .panel-footer {
+    padding-top: 40px;
+    min-height: 300px;
+  }
+}
+
+
+}

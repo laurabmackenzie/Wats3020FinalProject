@@ -9,7 +9,7 @@ $(document).ready(function() {
 	});
 
 	// Add smooth scrolling on all links inside the navbar
-	$("#myNavbar a").on('click', function(event) {
+	$("#myNavbar a, #footerlinks a").on('click', function(event) {
 
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== "") {
@@ -33,21 +33,40 @@ $(document).ready(function() {
 		} // End if
 
 	});
-
+	
 	$('#showall').click(function() {
 		$('#somecupcakes').hide();
 		$('#allcupcakes').show();
 	});
-
+	
+	$('#showless').click(function() {
+		$('#allcupcakes').hide();
+		$('#somecupcakes').show();
+	});
 
 
 	$('.thumbnail').click(function() {
-		$('#testingcupcake').html(" <a href='' class='thumbnail'><img class='img-responsive' src='design/gridcupcake2.jpg' alt='Cupcaketest'>" + $(this).attr('data-flavor') + "</a>")
+		$('#testingcupcake').html(" <a class='thumbnail'><img class='img-responsive' src='design/gridcupcake2.jpg' alt='Cupcaketest'>" + $(this).attr('data-flavor') + "<br>" +  $(this).attr('data-desc') + "</a>")
 	})
 })
 
 
-function GetCalendar() {
+$('#show10').click(function() {
+	$('#location').empty();
+	GetCalendar(10);
+	$('#show10').hide();
+	$('#show5').show();
+});
+
+$('#show5').click(function() {
+  $('#location').empty();
+	GetCalendar(5);
+	$('#show5').hide();
+	$('#show10').show();
+});
+
+
+function GetCalendar(maxItems) {
 	var calendarURL = "https://www.googleapis.com/calendar/v3/calendars/5rccpgjq8n4ggv8mu5ccnuoq8g@group.calendar.google.com/events?key=AIzaSyDpSna7bpXe6-sqQGYc1pwN6KNHVgzUs6Y";
 	//Use jQuery ajax function to get JSON URL 
 	$.ajax(calendarURL)
@@ -57,7 +76,11 @@ function GetCalendar() {
 			//create a new Bootstrap column using bootstrap div
 			var list = $("#location");
 			//loop through the calendar items returned
-			data.items.forEach(function(item) {
+			
+			var numItems = data.items.length;
+			
+			for (var i=0; i < numItems && i < maxItems; i++) {
+				var item = data.items[i];
 				//for each one, create a new row
 				var listItem = $('<div class="row">');
 				//add the date of the event and description using bootstrap columns
@@ -65,7 +88,7 @@ function GetCalendar() {
 				$(listItem).html('<div class="col-sm-6 place">' + item.summary + "</div>" + "<div class='col-sm-6 date'>" + dateFormat(item.start.dateTime, "dddd, mmmm dS, yyyy, h:MM TT") + "</div>");
 				//add the new columns to the row we made above
 				$(list).append(listItem);
-			});
+			}
 
 			//add the full row to the 
 			//element on the page with an id of 'calendar'
@@ -79,5 +102,7 @@ function GetCalendar() {
 
 
 $(document).ready(function() {
-	GetCalendar();
+		$('#show5').hide();
+
+	GetCalendar(5);
 });

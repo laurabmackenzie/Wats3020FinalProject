@@ -18,7 +18,7 @@
 
 <body>
   <!--responsive header with navigation-->
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
         <!--navbar collapses on mobile devices-->
@@ -34,25 +34,25 @@
           <!--navbar links-->
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#allcupcakes">Cakes</a></li>
-          <li><a href="#about">About</a></li>
           <li><a href="#findus">Find Us</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <!--social media icons-->
         <ul class="nav navbar-nav navbar-right social">
-          <li><a href="www.facebook.com"><i class="fa fa-lg fa-facebook-square"></i></a></li>
-          <li><a href="www.twitter.com"><i class="fa fa-lg fa-twitter-square"></i></a></li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-lg fa-facebook-square"></i></a></li>
+          <li><a href="https://twitter.com/"><i class="fa fa-lg fa-twitter-square"></i></a></li>
         </ul>
       </div>
     </div>
   </nav>
   <!--display image and slogan-->
   <div class="container-fluid">
-    <div class="row logo">
-      <p>Jemcakes</p>
+    <div class="row logo" id="jemcakes">
+      <p>Jemcakes</p><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero">
     </div>
     <div class="row hero">
-      <div class="col-sm-12"><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero">
+      <div class="col-sm-12">
         <p id="slogan">Art | Baked</p>
       </div>
     </div>
@@ -60,28 +60,31 @@
     <div id="cupcakes">
       <div class="row thumbnails" id="allcupcakes">
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake1">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Salted Caramel" data-desc="Organic | Cruelty-free"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake1">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Vanilla Cupcake with Lavendar Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake2">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Spring Lavendar Vanilla" data-desc="Organic | Cruelty-free"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake2">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Cupcake with Lemon Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake3">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Coffee Dark Chocolate" data-desc="Organic | Cruelty-free | Vegan"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake3">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Vanilla Cupcake with Cinnamon Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake4">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Marshmallow Dream" data-desc="Organic | Cruelty-free | Gluten-free"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake4">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Cupcake with Raspberry Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake5">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Vanilla Swirl" data-desc="Organic | Cruelty-free | Vegan"><img src="design/gridcupcake2.jpg" class="img-responsive" alt="Cupcake5">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Vanilla Cupcake with Chocolate Frosting"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="testcupcake">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Mint Chocolate Chip" data-desc="Organic | Cruelty-free"><img src="design/gridcupcake2.jpg" class="img-responsive img-circle" alt="testcupcake">
           </a>
+        </div>
+        <div class="col-sm-6 col-md-4" id="showfewercupcakes">
+          <button type="button" id="showless" class="btn btn-primary btn-sm">Less</button>
         </div>
       </div>
       <!-- Modal -->
@@ -91,33 +94,32 @@
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">This Selection</h4>
+              <h4 class="modal-title" id=>Cupcake Details</h4>
             </div>
-            <div class="modal-body" id=testingcupcake>
+            <div class="modal-body" id="testingcupcake">
             </div>
           </div>
         </div>
       </div>
       <div class="row thumbnails" id=somecupcakes>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake1">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Chocolate Salted Caramel" data-desc="Organic | Cruelty-free | Vegan"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake1">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake2">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Lavendar Vanilla Daisy" data-desc="Organic | Cruelty-free"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake2">
           </a>
         </div>
         <div class="col-sm-6 col-md-4">
-          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Pumpkin cupcake with Cream Cheese Frosting"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake3">
+          <a class="thumbnail" data-toggle="modal" data-target="#myModal" data-flavor="Coffee Dark Chocolate" data-desc="Organic | Cruelty-free"><img class="img-responsive" src="design/gridcupcake2.jpg" alt="Cupcake3">
           </a>
         </div>
         <!--button to show additional thumbnails in mobile view only-->
-        <div class="col-sm-6 col-md-4">
+        <div class="col-sm-6 col-md-4" id="showmorecupcakes">
           <button type="button" id="showall" class="btn btn-primary btn-sm">More</button>
         </div>
       </div>
-    </div>
-    <!--information on custom orders-->
+      <!--information on custom orders-->
     <div class="row custom" id="customorder">
       <div class="col-sm-12"><img class="img-responsive" src="design/customordercropped.jpg" alt="Custom">
         <p>Need a custom design?<br>Contact us.<br> Deliveries available.</p>
@@ -128,8 +130,18 @@
       <p id="title">Find Jemcakes</p>
     </div>
     <div class="row findus"><img class="img-responsive" src="design/foodtruckcropped.jpg" alt="Truck"></div>
-    <div class="row findus" id="location"></div>
-    <hr>
+    <div class="row findus" id="location">
+     </div>
+      <div class="row findus" id="location5">
+      <div class="col-sm-12" id="showmoredates">
+      <button type="button" class="btn btn-primary btn-sm" id="show10">More</button>
+    </div>
+      </div>
+    <div class="row findus" id="location10">
+      <div class="col-sm-12" id="showfewerdates">
+      <button type="button" class="btn btn-primary btn-sm" id='show5'>Less</button>
+    </div>
+      </div>
     <!--about our company-->
     <div class="row about" id="about">
       <div class="col-sm-6 abouttext">Founder Jada Mackenzie started baking cupcakes in elementary school. As her business thrived and expanded, Jada proudly launched her own mobile bakery. A portion of the proceeds from every cupcake goes to the World Wildlife fund.
@@ -139,21 +151,22 @@
     </div>
   </div>
   <!--responsive footer-->
-  <div class="panel-footer">
+  <div class="panel-footer" id="footerlinks">
     <nav>
-      <ul id="links">
-      <li><a href="#myNavbar">Home</a></li> |
-      <li><a href="#cupcakes">Cakes</a></li> |
-      <li><a href="#findus">Find Us</a></li>
-    </ul>
+      <ul>
+        <li><a href="#jemcakes">Home</a></li> |
+        <li><a href="#cupcakes">Cakes</a></li> |
+        <li><a href="#findus">Find Us</a></li> |
+        <li><a href="#about">About</a></li>
+      </ul>
     </nav>
     <ul id="socialmedia">
-      <li><a href="www.facebook.com"><i class="fa fa-lg fa-facebook-square"></i></a></li>
-      <li><a href="www.twitter.com"><i class="fa fa-lg fa-twitter-square"></i></a></li>
+      <li><a href="https://www.facebook.com/"><i class="fa fa-lg fa-facebook-square"></i></a></li>
+      <li><a href="https://www.twitter.com/"><i class="fa fa-lg fa-twitter-square"></i></a></li>
     </ul>
     <p id="logo">Jemcakes</p>
-    <p id="contact">Redmond, Washington<br><a href="info@jemcakes.com">info@jemcakes.com</a></p>
-      <p id="copyright">copyright©2017. Laura Mackenzie. All Rights Reserved.</p>
+    <p id="contact">Redmond, Washington<br><a href="mailto:info@jemcakes.com">info@jemcakes.com</a></p>
+    <p id="copyright">copyright©2017. Laura Mackenzie. All Rights Reserved.</p>
   </div>
   <!--3rd party libraries-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
