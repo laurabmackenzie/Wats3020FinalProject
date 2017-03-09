@@ -87,7 +87,7 @@ function GetCalendar(maxItems, scroll) {
 				var listItem = $('<div class="locationRow">');
 				//add the date of the event and description using bootstrap columns
 				//note, used date.format.js to pretty up the date
-				$(listItem).html('<div class="col-sm-6 place">' + item.summary + "</div>" + "<div class='col-sm-6 date'>" + dateFormat(item.start.dateTime, "dddd, mmmm dS, yyyy, h:MM TT") + "</div>");
+				$(listItem).html('<div class="col-sm-6 place">' + item.summary + "</div>" + "<div class='col-sm-6 date'>" + dateFormat(item.start.dateTime, "dddd, mmmm dS, h:MM TT") + "</div>");
 				//add the new columns to the row we made above
 				$(list).append(listItem);
 			}
