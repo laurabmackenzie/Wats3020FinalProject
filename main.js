@@ -22,7 +22,7 @@ $(document).ready(function() {
 			// Using jQuery's animate() method to add smooth page scroll
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
-				scrollTop: $(hash).offset().top
+				scrollTop: $(hash).offset().top - 70
 			}, 800, function() {
 
 				// Add hash (#) to URL when done scrolling (default click behavior)
@@ -35,13 +35,13 @@ $(document).ready(function() {
 	
 	//click event for showing and hiding additional cupcakes in mobile version
 	$('#showall').click(function() {
-		$('#somecupcakes').hide();
-		$('#allcupcakes').show();
+		$('#somecupcakes').fadeOut('slow');
+		$('#allcupcakes').fadeIn('slow');
 	});
 	
 	$('#showless').click(function() {
-		$('#allcupcakes').hide();
-		$('#somecupcakes').show();
+		$('#allcupcakes').fadeOut('slow');
+		$('#somecupcakes').fadeIn('slow');
 	});
 
 //click event for modal window displaying additional information.
@@ -52,24 +52,25 @@ $(document).ready(function() {
 
 //click event for showing and hiding extra date and location information.
 $('#show10').click(function() {
-	$('#location').empty();
-	GetCalendar(10);
-	$('#show10').hide();
-	$('#show5').show();
+	GetCalendar(10, true);
+	$('#show10').fadeOut('slow');
+	$('#show5').fadeIn('slow');
 });
 
 $('#show5').click(function() {
-  $('#location').empty();
-	GetCalendar(5);
-	$('#show5').hide();
-	$('#show10').show();
+	GetCalendar(5, true);
+	$('#show5').fadeOut('slow');
+	$('#show10').fadeIn('slow');
 });
 
 
 //Get up to date calendar information from Google Calendar API
-function GetCalendar(maxItems) {
+function GetCalendar(maxItems, scroll) {
 	var calendarURL = "https://www.googleapis.com/calendar/v3/calendars/5rccpgjq8n4ggv8mu5ccnuoq8g@group.calendar.google.com/events?key=AIzaSyDpSna7bpXe6-sqQGYc1pwN6KNHVgzUs6Y";
 	//Use jQuery ajax function to get JSON URL 
+	$('#location').hide('slow');
+	$('#location').empty();
+	
 	$.ajax(calendarURL)
 		//if successful, call this function with the data from the 
 		//calendar URL
@@ -83,12 +84,20 @@ function GetCalendar(maxItems) {
 			for (var i=0; i < numItems && i < maxItems; i++) {
 				var item = data.items[i];
 				//for each one, create a new row
-				var listItem = $('<div class="row">');
+				var listItem = $('<div class="locationRow">');
 				//add the date of the event and description using bootstrap columns
 				//note, used date.format.js to pretty up the date
 				$(listItem).html('<div class="col-sm-6 place">' + item.summary + "</div>" + "<div class='col-sm-6 date'>" + dateFormat(item.start.dateTime, "dddd, mmmm dS, yyyy, h:MM TT") + "</div>");
 				//add the new columns to the row we made above
 				$(list).append(listItem);
+			}
+		
+			$(list).show('slow');
+
+			if (scroll) {
+				$('html, body').animate({
+					scrollTop: $(list).offset().top - 80
+				}, 800);
 			}
 
 			//add the full row to the 
@@ -104,5 +113,5 @@ function GetCalendar(maxItems) {
 //ready handler retrieves 5 calendar entries on page load.
 $(document).ready(function() {
 		$('#show5').hide();
-		GetCalendar(5);
+		GetCalendar(5, false);
 });

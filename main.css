@@ -8,6 +8,7 @@ body {
   margin: 0;
   margin-bottom: 10px;
 }
+
 /*removing highlighting of active page since there's only one page*/
 .navbar-default .navbar-nav>.active>a {
   background-color: transparent;
@@ -25,6 +26,7 @@ body {
 .hero img {
   width: 100%;
 }
+
 /*positioning and styling slogan*/
 .hero #slogan {
   text-align: center;
@@ -33,6 +35,7 @@ body {
   font-family: 'Cinzel', serif;
   margin-top: -25px;
 }
+
 /*positioning and styling logo*/
 .logo {
   text-align: center;
@@ -40,39 +43,48 @@ body {
   color: #28170D;
   font-family: 'Cinzel', serif;
 }
+
 /*contains less button*/
 div #showfewercupcakes {
   text-align: center;
 }
+
 /*contains more button*/
 div #showmorecupcakes {
   text-align: center;
 }
+
 /*styling modal*/
 .btn-primary:hover {
   background-color: #00CED1;
   border-color: #00CED1;
 }
+
 .btn-primary:active {
   background-color: #00CED1;
   border-color: #00CED1;
 }
+
 .btn-primary:focus {
   background-color: #00CED1;
   border-color: #00CED1;
 }
+
 .modal-body {
   text-align: center;
   color: #28170D;
 }
+
 .modal-body a {
   color: #28170D;
   border-color: transparent;
 }
+
 .modal-body a:hover {
   border-color: transparent;
   text-decoration: none;
 }
+
 /*styling bootstrap grid*/
 .row a.thumbnail:hover {
   color: #28170D;
@@ -80,122 +92,155 @@ div #showmorecupcakes {
   cursor: pointer;
   opacity: 0.7;
 }
+
 .row a {
   border-color: transparent;
 }
+
 .thumbnails img {
   width: 20%;
   height: auto;
 }
+
 /*display partial thumbnail grid with button for mobile view*/
 #somecupcakes {
   display: block;
   padding: 10px;
 }
+
 #allcupcakes {
   display: none;
   padding: 10px;
 }
+
 /*styling find us section*/
 #customorder p {
   font-family: 'Cinzel', serif;
   margin-top: -80px;
   color: white;
   font-size: 10px;
-  padding-left: 20px;
+  padding-left: 35px;
   padding-right: 150px;
 }
+
 #locations {
   display: block;
 }
+
 #locations10 {
   display: none;
 }
+
 /*more and less buttons*/
 .btn {
   color: white;
   background-color: #28170D;
   border-color: #28170D;
 }
+
 div #showmoredates {
   text-align: center;
   padding: 10px;
 }
+
 div #showfewerdates {
   text-align: center;
   padding: 10px;
 }
+
 .findus img {
   width: 100%;
-  padding: 80px;
   padding-top: 0px;
 }
+
+div .findus {
+  text-align:center;
+}
+
 #location {
   font-family: Playfair Display, serif;
   color: #28170D;
   text-align: center;
   padding-bottom: 30px;
 }
-#location .row {
+
+#location .locationRow {
   margin-bottom: 10px;
 }
+
 #title {
   text-align: center;
   font-size: 18px;
   padding-top: 60px;
   font-family: 'Cinzel', serif;
 }
+
 /*about section*/
 .about img {
   margin: 0 auto;
   max-width: 110px;
 }
+
+
 .abouttext {
   padding: 50px 60px 40px 80px;
   font-family: "Playfair Display, serif";
   font-size: 16px;
 }
+
 .aboutimage {
   padding-bottom: 30px;
 }
+
 /*footer*/
 div #contact {
   font-size: 12px;
   text-align: center;
   color: #00CED1;
 }
+
 div #logo {
   font-size: 24px;
   text-align: center;
 }
+
 div #copyright {
   font-size: 8px;
   text-align: center;
   padding: 0;
   color: #28170D;
 }
+
 .panel-footer ul {
   list-style-type: none;
   font-size: 12px;
   text-align: center;
   padding: 0;
 }
+
 .panel-footer li {
   display: inline;
   color: #00CED1;
 }
+
 .panel-footer a {
   color: #00CED1;
   text-decoration: none;
 }
+
 a:hover {
   color: #28170D;
 }
+
 .panel-footer {
   background-image: url("design/woodbackgroundcropped.jpg");
   min-height: 100px;
   color: #28170D;
   font-family: 'Cinzel', serif;
+}
+
+.row {
+  background-color:white;
 }
 
 /*for phones in landscape orientation*/
@@ -207,26 +252,30 @@ a:hover {
     font-family: 'Cinzel', serif;
     margin-top: -40px;
   }
+  
   .logo {
     text-align: center;
     font-size: 24px;
     color: #28170D;
     font-family: 'Cinzel', serif;
   }
+  
    #customorder p {
     font-family: 'Cinzel', serif;
     margin-top: -140px;
     margin-bottom: 100px;
     color: white;
     font-size: 16px;
-    padding-left: 50px;
+    padding-left: 75px;
     padding-right: 300px;
   }
+  
   .findus img {
     padding: 180px;
     padding-top: 0px;
     padding-bottom: 40px;
   }
+  
   .findus #location {
     font-family: Playfair Display, serif;
     color: #28170D;
@@ -235,6 +284,7 @@ a:hover {
     padding-top: 0;
     padding-bottom: 0;
   }
+  
   .findus #title {
     color: #28170D;
     text-align: center;
@@ -242,12 +292,14 @@ a:hover {
     padding: 10px;
     font-family: Playfair Display, serif;
   }
+  
   .abouttext {
     padding-left: 150px;
     padding-right: 150px;
     font-family: "Playfair Display, serif";
     font-size: 16px;
   }
+  
 }
 
 /*for tablets, show full thumbnail grid and display larger images*/
@@ -256,98 +308,145 @@ a:hover {
     font-size: 24px;
     margin-top: -40px;
   }
+  
   .navbar {
     opacity: 0.7;
   }
+  
   .logo {
     font-size: 24px;
   }
+  
    #allcupcakes {
     display: block;
   }
+  
    #somecupcakes {
     display: none;
   }
+  
    #showfewercupcakes .btn {
     visibility: hidden;
   }
+  
   #allcupcakes {
     padding: 20px;
   }
+  
   .thumbnails img {
     width: 30%;
     height: auto;
   }
+  
   #customorder p {
     margin-top: -180px;
     margin-bottom: 100px;
     font-size: 24px;
-    padding-left: 35px;
+    padding-left: 45px;
     padding-right: 400px;
   }
+  
   .findus img {
     width: 100%;
-    padding: 0 200px 50px 200px;
   }
+  
    div #showalldates {
     text-align: center;
     padding: 20px;
   }
+  
   #location {
     font-size: 18px;
     padding: 0px 50px 40px 50px;
   }
+  
    #title {
     text-align: center;
     font-size: 24px;
     padding-top: 0;
   }
+  
   .abouttext {
     font-size: 14px;
     padding: 0px;
     padding-left: 75px;
     padding-bottom: 100px;
   }
+  
   .btn {
     font-size: 12px;
   }
+  
   .abouttext {
     padding: 50px 10px 60px 70px;
     font-size: 18px;
   }
+  
   .about img {
     margin: 0 auto;
     max-width: 150px;
   }
+  
   .aboutimage {
     padding-top: 75px;
     padding-right: 150px;
   }
+  
   div #contact {
     font-size: 16px;
   }
+  
   div #logo {
     font-size: 36px;
   }
+  
   div #copyright {
     font-size: 12px;
     padding: 0;
   }
+  
   .panel-footer ul {
     font-size: 16px;
     padding: 0;
   }
+  
   .panel-footer {
     padding-top: 25px;
     min-height: 250px;
   }
+  
+}
+/*setting header image as non-scrolling backgroud on desktop and large screens only and hiding current hero*/
+@media only screen and (min-width: 992px) {
+  
+ #background {
+     position: fixed;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     background-repeat: no-repeat;
+     background-position-y: 135px;
+     background-image: url("design/herophotocupcakescropped.jpg");
+     background-size: 100%;
+ }
+  
+  .logo {
+    height: 500px;
+    background-color:transparent;
+ }
+  
+  .logo img {
+      display:none;
+ }
 }
 
 /*for desktops, a few styling tweaks*/
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .hero #slogan {
     font-size: 36px;
-    margin-top: -60px;
+    margin-top: -140px;
   }
   .navbar {
     opacity: 0.7;
@@ -366,15 +465,14 @@ a:hover {
     height: auto;
   }
   #customorder p {
-    margin-top: -200px;
+    margin-top: -215px;
     margin-bottom: 100px;
     font-size: 24px;
-    padding-left: 35px;
+    padding-left: 90px;
     padding-right: 450px;
   }
   .findus img {
     width: 100%;
-    padding: 0 300px 75px 300px;
   }
   div #showalldates {
     text-align: center;
@@ -441,7 +539,7 @@ a:hover {
   .hero #slogan {
     font-size: 48px;
     color: #28170D;
-    margin-top: -80px;
+    margin-top: -70px;
   }
   .logo {
     font-size: 48px;
@@ -466,7 +564,6 @@ a:hover {
   }
   .findus img {
     width: 100%;
-    padding: 0 400px 25px 400px;
   }
   div #showalldates {
     text-align: center;

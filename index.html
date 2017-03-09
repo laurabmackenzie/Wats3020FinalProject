@@ -20,7 +20,7 @@
 <body>
   <!--responsive header with navigation-->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid" id="nav container">
       <div class="navbar-header">
         <!--navbar collapses on mobile devices-->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -46,8 +46,10 @@
       </div>
     </div>
   </nav>
+  <div id="background">   
+  </div>
   <!--display image and slogan-->
-  <div class="container-fluid">
+  <div class="container-fluid" id="contentcontainer">
     <div class="row logo" id="jemcakes">
       <p>Jemcakes</p><img src="design/herophotocupcakescropped.jpg" class="img-responsive" alt="cupcakehero">
     </div>
@@ -116,7 +118,7 @@
         </div>
         <!--button to show additional thumbnails in mobile view only-->
         <div class="col-sm-12" id="showmorecupcakes">
-          <button type="button" id="showall" class="btn btn-primary btn-sm">See More Jemcakes</button>
+          <button type="button" id="showall" class="btn btn-primary btn-sm">See More</button>
         </div>
       </div>
     </div>
