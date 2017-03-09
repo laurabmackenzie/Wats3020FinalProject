@@ -122,6 +122,9 @@ div #showmorecupcakes {
   padding-left: 35px;
   padding-right: 150px;
 }
+#customorder img {
+  padding: 30px;
+}
 
 #locations {
   display: block;
@@ -150,7 +153,7 @@ div #showfewerdates {
 
 .findus img {
   width: 100%;
-  padding-top: 0px;
+padding: 0 100px 20px 100px;
 }
 
 div .findus {
@@ -189,7 +192,7 @@ div .findus {
 }
 
 .aboutimage {
-  padding-bottom: 30px;
+padding-top:10px;
 }
 
 /*footer*/
@@ -233,6 +236,7 @@ a:hover {
 }
 
 .panel-footer {
+  margin-top:36px;
   background-image: url("design/woodbackgroundcropped.jpg");
   min-height: 100px;
   color: #28170D;
@@ -271,7 +275,7 @@ a:hover {
   }
   
   .findus img {
-    padding: 180px;
+    padding: 220px;
     padding-top: 0px;
     padding-bottom: 40px;
   }
@@ -307,6 +311,9 @@ a:hover {
   .hero #slogan {
     font-size: 24px;
     margin-top: -40px;
+  }
+  .aboutimage {
+    padding: 25px 100px 0 100px;
   }
   
   .navbar {
@@ -345,9 +352,13 @@ a:hover {
     padding-left: 45px;
     padding-right: 400px;
   }
+  #customorder img {
+    padding:0;
+  }
   
   .findus img {
     width: 100%;
+    padding: 0 250px 30px 250px;
   }
   
    div #showalldates {
@@ -357,7 +368,7 @@ a:hover {
   
   #location {
     font-size: 18px;
-    padding: 0px 50px 40px 50px;
+    padding: 0px 35px 40px 35px;
   }
   
    #title {
@@ -387,9 +398,9 @@ a:hover {
     max-width: 150px;
   }
   
-  .aboutimage {
+  #aboutimage {
     padding-top: 75px;
-    padding-right: 150px;
+    padding-right: 100px;
   }
   
   div #contact {
@@ -464,6 +475,9 @@ a:hover {
     width: 45%;
     height: auto;
   }
+  #customorder img {
+    padding:0;
+  }
   #customorder p {
     margin-top: -215px;
     margin-bottom: 100px;
@@ -473,6 +487,7 @@ a:hover {
   }
   .findus img {
     width: 100%;
+    padding:0 350px 50px 350px;
   }
   div #showalldates {
     text-align: center;
@@ -494,9 +509,11 @@ a:hover {
   .about img {
     margin: 0 auto;
     max-width: 200px;
+    padding:20px;
   }
-  .aboutimage {
-    padding-bottom: 75px;
+  #aboutimage {
+    padding-top:55px;
+    padding-right:144px;
   }
   div #contact {
     font-size: 18px;
@@ -562,8 +579,12 @@ a:hover {
     padding-left: 100px;
     padding-right: 700px;
   }
+  #customorder img {
+    padding:0;
+  }
   .findus img {
     width: 100%;
+    padding: 30px 400px 60px 400px;
   }
   div #showalldates {
     text-align: center;
@@ -583,9 +604,11 @@ a:hover {
   .about img {
     margin: 0 auto;
     max-width: 250px;
+    padding: 40px;
   }
-  .aboutimage {
-    padding-bottom: 90px;
+  #aboutimage {
+    padding-top: 55px;
+    padding-right:180px;
   }
   #title {
     font-size: 36px;
