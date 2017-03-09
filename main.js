@@ -53,14 +53,14 @@ $(document).ready(function() {
 //click event for showing and hiding extra date and location information.
 $('#show10').click(function() {
 	GetCalendar(10, true);
-	$('#show10').fadeOut('slow');
-	$('#show5').fadeIn('slow');
+	$('#show10').fadeOut('fast');
+	$('#show5').fadeIn('fast');
 });
 
 $('#show5').click(function() {
 	GetCalendar(5, true);
-	$('#show5').fadeOut('slow');
-	$('#show10').fadeIn('slow');
+	$('#show5').fadeOut('fast');
+	$('#show10').fadeIn('fast');
 });
 
 

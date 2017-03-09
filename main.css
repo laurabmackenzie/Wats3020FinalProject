@@ -69,6 +69,10 @@ div #showmorecupcakes {
   background-color: #00CED1;
   border-color: #00CED1;
 }
+.btn-primary:visited {
+  background-color: #00CED1;
+  border-color: #00CED1;
+}
 
 .modal-body {
   text-align: center;
@@ -370,7 +374,7 @@ a:hover {
   
   #location {
     font-size: 18px;
-    padding: 0px 35px 40px 35px;
+    padding: 0px 25px 40px 25px;
   }
   
    #title {
