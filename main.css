@@ -116,10 +116,10 @@ div #showmorecupcakes {
 /*styling find us section*/
 #customorder p {
   font-family: 'Cinzel', serif;
-  margin-top: -80px;
+  margin-top: -102px;
   color: white;
   font-size: 10px;
-  padding-left: 35px;
+  padding-left: 60px;
   padding-right: 150px;
 }
 #customorder img {
@@ -183,10 +183,12 @@ div .findus {
   margin: 0 auto;
   max-width: 110px;
 }
-
+#about {
+  padding-bottom: 40px;
+}
 
 .abouttext {
-  padding: 50px 60px 40px 80px;
+  padding: 20px 80px 40px 80px;
   font-family: "Playfair Display, serif";
   font-size: 16px;
 }
@@ -236,7 +238,6 @@ a:hover {
 }
 
 .panel-footer {
-  margin-top:36px;
   background-image: url("design/woodbackgroundcropped.jpg");
   min-height: 100px;
   color: #28170D;
@@ -266,7 +267,7 @@ a:hover {
   
    #customorder p {
     font-family: 'Cinzel', serif;
-    margin-top: -140px;
+    margin-top: -160px;
     margin-bottom: 100px;
     color: white;
     font-size: 16px;
@@ -298,6 +299,7 @@ a:hover {
   }
   
   .abouttext {
+    padding-top:30px;
     padding-left: 150px;
     padding-right: 150px;
     font-family: "Playfair Display, serif";
@@ -512,7 +514,7 @@ a:hover {
     padding:20px;
   }
   #aboutimage {
-    padding-top:55px;
+    padding-top:75px;
     padding-right:144px;
   }
   div #contact {
@@ -607,7 +609,7 @@ a:hover {
     padding: 40px;
   }
   #aboutimage {
-    padding-top: 55px;
+    padding-top: 45px;
     padding-right:180px;
   }
   #title {
