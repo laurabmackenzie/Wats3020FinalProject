@@ -1,7 +1,6 @@
 /*if user clicks "more" button, show full thumbnail grid on mobile devices*/
 $(document).ready(function() {
 
-
 	// Add scrollspy to <body>
 	$('body').scrollspy({
 		target: "navbar",
@@ -34,6 +33,7 @@ $(document).ready(function() {
 
 	});
 	
+	//click event for showing and hiding additional cupcakes in mobile version
 	$('#showall').click(function() {
 		$('#somecupcakes').hide();
 		$('#allcupcakes').show();
@@ -44,13 +44,13 @@ $(document).ready(function() {
 		$('#somecupcakes').show();
 	});
 
-
+//click event for modal window displaying additional information.
 	$('.thumbnail').click(function() {
 		$('#testingcupcake').html(" <a class='thumbnail'><img class='img-responsive' src='design/gridcupcake2.jpg' alt='Cupcaketest'>" + $(this).attr('data-flavor') + "<br>" +  $(this).attr('data-desc') + "</a>")
 	})
 })
 
-
+//click event for showing and hiding extra date and location information.
 $('#show10').click(function() {
 	$('#location').empty();
 	GetCalendar(10);
@@ -66,6 +66,7 @@ $('#show5').click(function() {
 });
 
 
+//Get up to date calendar information from Google Calendar API
 function GetCalendar(maxItems) {
 	var calendarURL = "https://www.googleapis.com/calendar/v3/calendars/5rccpgjq8n4ggv8mu5ccnuoq8g@group.calendar.google.com/events?key=AIzaSyDpSna7bpXe6-sqQGYc1pwN6KNHVgzUs6Y";
 	//Use jQuery ajax function to get JSON URL 
@@ -100,9 +101,8 @@ function GetCalendar(maxItems) {
 		});
 }
 
-
+//ready handler retrieves 5 calendar entries on page load.
 $(document).ready(function() {
 		$('#show5').hide();
-
-	GetCalendar(5);
+		GetCalendar(5);
 });
