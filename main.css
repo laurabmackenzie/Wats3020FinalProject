@@ -374,7 +374,7 @@ a:hover {
   
   #location {
     font-size: 18px;
-    padding: 0px 25px 40px 25px;
+    padding: 0 25px 40px 0;
   }
   
    #title {
