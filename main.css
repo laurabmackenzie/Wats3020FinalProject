@@ -26,6 +26,9 @@ body {
 .hero img {
   width: 100%;
 }
+.feature img {
+  width: 100%
+}
 
 /*positioning and styling slogan*/
 .hero #slogan {
@@ -38,6 +41,22 @@ body {
 
 /*positioning and styling logo*/
 .logo {
+  text-align: center;
+  font-size: 16px;
+  color: #28170D;
+  font-family: 'Cinzel', serif;
+}
+.feature {
+  min-height:50px;
+  padding-top:20px;
+}
+.feature p {
+  text-align: center;
+  font-size: 12px;
+  color: #28170D;
+  font-family: 'Playfair Display', serif;
+}
+.design p {
   text-align: center;
   font-size: 16px;
   color: #28170D;
@@ -102,7 +121,7 @@ div #showmorecupcakes {
 }
 
 .thumbnails img {
-  width: 20%;
+  width: 60%;
   height: auto;
 }
 
@@ -143,6 +162,7 @@ div #showmorecupcakes {
   color: white;
   background-color: #28170D;
   border-color: #28170D;
+  opacity:0.8;
 }
 
 div #showmoredates {
@@ -177,8 +197,8 @@ div .findus {
 
 #title {
   text-align: center;
-  font-size: 18px;
-  padding-top: 60px;
+  font-size: 16px;
+  padding-top: 35px;
   font-family: 'Cinzel', serif;
 }
 
@@ -194,7 +214,7 @@ div .findus {
 .abouttext {
   padding: 20px 80px 40px 80px;
   font-family: "Playfair Display, serif";
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .aboutimage {
@@ -261,6 +281,13 @@ a:hover {
     font-family: 'Cinzel', serif;
     margin-top: -40px;
   }
+  .feature p {
+  font-size: 20px;
+}
+.design p {
+  font-size: 24px;
+}
+
   
   .logo {
     text-align: center;
@@ -297,7 +324,7 @@ a:hover {
   .findus #title {
     color: #28170D;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;
     font-family: Playfair Display, serif;
   }
@@ -329,8 +356,14 @@ a:hover {
   .logo {
     font-size: 24px;
   }
+  .feature p {
+  text-align: center;
+  font-size: 18px;
+  color: #28170D;
+  font-family: 'Cinzel', serif;
+}
   
-   #allcupcakes {
+  #allcupcakes {
     display: block;
   }
   
@@ -347,8 +380,12 @@ a:hover {
   }
   
   .thumbnails img {
-    width: 30%;
+    width: 100%;
     height: auto;
+  }
+  .thumbnails a {
+    padding:0;
+    margin-bottom:5px;
   }
   
   #customorder p {
@@ -477,10 +514,6 @@ a:hover {
   #showfewercupcakes .btn {
     visibility: hidden;
   }
-  .thumbnails img {
-    width: 45%;
-    height: auto;
-  }
   #customorder img {
     padding:0;
   }
@@ -566,10 +599,6 @@ a:hover {
   }
   .logo {
     font-size: 48px;
-  }
-  .thumbnails img {
-    width: 60%;
-    height: auto;
   }
   #showfewercupcakes .btn {
     visibility: hidden;

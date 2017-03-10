@@ -58,7 +58,7 @@ $('#show10').click(function() {
 });
 
 $('#show5').click(function() {
-	GetCalendar(5, true);
+	GetCalendar(5, true);	
 	$('#show5').fadeOut('fast');
 	$('#show10').fadeIn('fast');
 });
@@ -68,7 +68,6 @@ $('#show5').click(function() {
 function GetCalendar(maxItems, scroll) {
 	var calendarURL = "https://www.googleapis.com/calendar/v3/calendars/5rccpgjq8n4ggv8mu5ccnuoq8g@group.calendar.google.com/events?key=AIzaSyDpSna7bpXe6-sqQGYc1pwN6KNHVgzUs6Y";
 	//Use jQuery ajax function to get JSON URL 
-	$('#location').hide('slow');
 	$('#location').empty();
 	
 	$.ajax(calendarURL)
@@ -92,7 +91,6 @@ function GetCalendar(maxItems, scroll) {
 				$(list).append(listItem);
 			}
 		
-			$(list).show('slow');
 
 			if (scroll) {
 				$('html, body').animate({
