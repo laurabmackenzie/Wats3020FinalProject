@@ -46,7 +46,13 @@ $(document).ready(function() {
 
 //click event for modal window displaying additional information.
 	$('.thumbnail').click(function() {
-		$('#testingcupcake').html(" <a class='thumbnail'><img class='img-responsive' src='design/gridcupcake2.jpg' alt='Cupcaketest'>" + $(this).attr('data-flavor') + "<br>" +  $(this).attr('data-desc') + "</a>")
+		var img = $(this).find('img');
+		
+		$('#testingcupcake').html(
+			"<a class='thumbnail'><img class='img-responsive' src='"  + 
+			$(this).find('img').attr('src') + 
+			"' alt='Cupcaketest'>" + $(this).attr('data-flavor') + "<br>" +  $(this).attr('data-desc') + "</a>");
+		
 	})
 })
 
