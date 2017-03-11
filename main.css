@@ -1,3 +1,37 @@
+/* fonts */
+body {
+  font-family: 'Playfair Display', serif;
+  color: #28170D;
+}
+
+h1, h2 {
+  font-family: 'Cinzel', serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+
+.row.thumbnails {
+  text-align: center;
+}
+
+/*positioning and styling logo*/
+
+.logo {
+  text-align: center;
+  font-size: 16px;
+}
+
+.row.hero {
+  background-color:transparent;
+}
+
 /*custom styling*/
 
 body {
@@ -9,9 +43,10 @@ body {
   margin-bottom: 10px;
 }
 
+
 /*removing highlighting of active page since there's only one page*/
+
 .navbar-default .navbar-nav>.active>a {
-  background-color: transparent;
   background-color: transparent;
 }
 
@@ -23,57 +58,74 @@ body {
   min-height: 200px;
 }
 
+img.featured {
+  width: 100%;
+}
+.thumbnail {
+  padding:0 60px 1px 60px;
+  margin-bottom:1px;
+}
+
+.thumbnails .col-sm-6 {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+#cupcakes img {
+	border-radius: 34px;
+}
+
 .hero img {
   width: 100%;
 }
+
 .feature img {
   width: 100%
 }
+
+
 /*positioning and styling slogan*/
+
 .hero #slogan {
   text-align: center;
-  font-size: 16px;
-  color: #28170D;
-  font-family: 'Cinzel', serif;
-  margin-top: -25px;
 }
 
-/*positioning and styling logo*/
-.logo {
-  text-align: center;
-  font-size: 16px;
-  color: #28170D;
-  font-family: 'Cinzel', serif;
-}
+
+
 .feature {
-  min-height:125px;
-  padding-top:20px;
+  min-height: 125px;
+  padding-top: 20px;
 }
+
 .feature p {
   text-align: center;
   font-size: 12px;
   padding: 0 40px 0 40px;
-  color: #28170D;
-  font-family: 'Playfair Display', serif;
 }
+
 .design p {
   text-align: center;
   font-size: 16px;
-  color: #28170D;
-  font-family: 'Cinzel', serif;
+  margin-bottom: -10px;
+  padding-top: 30px;
 }
 
+
 /*contains less button*/
+
 div #showfewercupcakes {
   text-align: center;
 }
 
+
 /*contains more button*/
+
 div #showmorecupcakes {
   text-align: center;
 }
 
+
 /*styling modal*/
+
 .btn-primary:hover {
   background-color: #00CED1;
   border-color: #00CED1;
@@ -88,6 +140,7 @@ div #showmorecupcakes {
   background-color: #00CED1;
   border-color: #00CED1;
 }
+
 .btn-primary:visited {
   background-color: #00CED1;
   border-color: #00CED1;
@@ -108,7 +161,9 @@ div #showmorecupcakes {
   text-decoration: none;
 }
 
+
 /*styling bootstrap grid*/
+
 .row a.thumbnail:hover {
   color: #28170D;
   border-color: transparent;
@@ -125,7 +180,9 @@ div #showmorecupcakes {
   height: auto;
 }
 
+
 /*display partial thumbnail grid with button for mobile view*/
+
 #somecupcakes {
   display: block;
   padding: 10px;
@@ -136,7 +193,9 @@ div #showmorecupcakes {
   padding: 10px;
 }
 
+
 /*styling find us section*/
+
 #customorder p {
   font-family: 'Cinzel', serif;
   margin-top: -102px;
@@ -145,6 +204,7 @@ div #showmorecupcakes {
   padding-left: 60px;
   padding-right: 150px;
 }
+
 #customorder img {
   padding: 30px;
 }
@@ -157,12 +217,14 @@ div #showmorecupcakes {
   display: none;
 }
 
+
 /*more and less buttons*/
+
 .btn {
   color: white;
   background-color: #28170D;
   border-color: #28170D;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 div #showmoredates {
@@ -177,11 +239,11 @@ div #showfewerdates {
 
 .findus img {
   width: 100%;
-padding: 0 100px 20px 100px;
+  padding: 0 100px 20px 100px;
 }
 
 div .findus {
-  text-align:center;
+  text-align: center;
 }
 
 #location {
@@ -202,26 +264,31 @@ div .findus {
   font-family: 'Cinzel', serif;
 }
 
+
 /*about section*/
+
 .about img {
   margin: 0 auto;
   max-width: 110px;
 }
+
 #about {
   padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .abouttext {
   padding: 20px 80px 40px 80px;
-  font-family: "Playfair Display, serif";
   font-size: 12px;
 }
 
 .aboutimage {
-padding-top:10px;
+  padding-top: 10px;
 }
 
+
 /*footer*/
+
 div #contact {
   font-size: 12px;
   text-align: center;
@@ -269,274 +336,243 @@ a:hover {
 }
 
 .row {
-  background-color:white;
+  background-color: white;
 }
+
 
 /*for phones in landscape orientation*/
+
 @media only screen and (max-width:768px) and (orientation:landscape) {
+
+  #featuredescription, .findus #title {
+    font-size: 20px;
+  }
+  h1, h2 {
+    font-size: 24px;
+  }
+  
   .hero #slogan {
     text-align: center;
-    font-size: 24px;
-    color: #28170D;
-    font-family: 'Cinzel', serif;
-    margin-top: -40px;
+    margin-top: -48px;
   }
   .feature {
-    min-height:200px;
+    min-height: 200px;
   }
-  .feature p {
-  font-size: 16px;
-  padding: 25px 160px 0 160px;
-}
-.design p {
-  font-size: 24px;
-}
-
   
+  .feature p {
+    padding: 25px 160px 0 160px;
+  }
   .logo {
     text-align: center;
-    font-size: 24px;
     color: #28170D;
-    font-family: 'Cinzel', serif;
   }
-  
-   #customorder p {
-    font-family: 'Cinzel', serif;
+ 
+  #customorder p {
     margin-top: -160px;
     margin-bottom: 100px;
     color: white;
-    font-size: 16px;
     padding-left: 75px;
     padding-right: 300px;
   }
-  
   .findus img {
     padding: 220px;
     padding-top: 0px;
     padding-bottom: 40px;
   }
-  
   .findus #location {
-    font-family: Playfair Display, serif;
     color: #28170D;
     padding-left: 200px;
     padding-right: 60px;
     padding-top: 0;
     padding-bottom: 0;
   }
-  
+
   .findus #title {
     color: #28170D;
     text-align: center;
-    font-size: 20px;
     padding: 10px;
-    font-family: Playfair Display, serif;
   }
   
   .abouttext {
-    padding-top:30px;
+    padding-top: 30px;
     padding-left: 150px;
     padding-right: 150px;
-    font-family: "Playfair Display, serif";
-    font-size: 16px;
   }
-  
 }
 
+
 /*for tablets, show full thumbnail grid and display larger images*/
+
 @media only screen and (min-width: 768px) {
-  .hero #slogan {
-    font-size: 24px;
-    margin-top: -40px;
+  h1 {
+    font-size: 36px;
   }
+  
+  h2 {
+    font-size: 26px;
+  }
+
   .aboutimage {
     padding: 25px 100px 0 100px;
   }
-  
   .navbar {
     opacity: 0.7;
   }
-  
-  .logo {
-    font-size: 24px;
-  }
+
   .feature {
     min-height: 200px;
   }
   .feature p {
-  padding-top: 20px;
-  font-size: 18px;
-}
+    padding-top: 20px;
+  }
   
+  .design p {
+    margin-bottom: -15px;
+    padding-top: 50px;
+  }
   #allcupcakes {
     display: block;
   }
-  
-   #somecupcakes {
+  #somecupcakes {
     display: none;
   }
-  
-   #showfewercupcakes .btn {
+  #showfewercupcakes .btn {
     visibility: hidden;
   }
-  
   #allcupcakes {
-    padding: 20px;
+    padding: 30px 150px 0 150px;
   }
-  
   .thumbnails img {
     width: 100%;
     height: auto;
   }
   .thumbnails a {
-    padding:0;
-    margin-bottom:5px;
+    padding: 0;
+    margin-bottom: 5px;
   }
-  
   #customorder p {
     margin-top: -180px;
     margin-bottom: 100px;
-    font-size: 24px;
     padding-left: 45px;
     padding-right: 400px;
+    font-size: 24px;
   }
   #customorder img {
-    padding:0;
+    padding: 0;
   }
-  
   .findus img {
     width: 100%;
     padding: 0 250px 30px 250px;
   }
-  
-   div #showalldates {
+  div #showalldates {
     text-align: center;
     padding: 20px;
   }
-  
   #location {
-    font-size: 18px;
     padding: 0 60px 40px 60px;
   }
-  
-   #title {
+
+  #title {
     text-align: center;
-    font-size: 24px;
     padding-top: 0;
   }
-  
   .abouttext {
-    font-size: 14px;
     padding: 0px;
     padding-left: 75px;
     padding-bottom: 100px;
   }
-  
   .btn {
     font-size: 12px;
   }
-  
   .abouttext {
     padding: 50px 10px 60px 70px;
     font-size: 18px;
   }
-  
   .about img {
     margin: 0 auto;
     max-width: 150px;
   }
-  
   #aboutimage {
     padding-top: 75px;
     padding-right: 100px;
   }
-  
   div #contact {
     font-size: 16px;
   }
-  
   div #logo {
     font-size: 36px;
   }
-  
   div #copyright {
     font-size: 12px;
     padding: 0;
   }
-  
   .panel-footer ul {
     font-size: 16px;
     padding: 0;
   }
-  
   .panel-footer {
     padding-top: 25px;
     min-height: 250px;
   }
-  
-}
-@media only screen and (min-width: 768px) and (orientation:landscape) {
-  .feature {
-    min-width: 50px;
-  }
-  .feature p {
-    font-size: 24px;
-  }
 }
 
+
 /*setting header image as non-scrolling backgroud on desktop and large screens only and hiding current hero*/
+
 @media only screen and (min-width: 992px) {
-  
- #background {
-     position: fixed;
-     top: 0;
-     left: 0;
-     height: 100%;
-     width: 100%;
-     z-index: -1;
-     background-repeat: no-repeat;
-     background-position-y: 135px;
-     background-image: url("design/herophotocupcakescropped.jpg");
-     background-size: 100%;
- }
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+    background-image: url("design/herophotocupcakescropped.jpg");
+    background-size: 100%;
+  }
   
   .logo {
     height: 500px;
-    background-color:transparent;
- }
+    background-color: transparent;
+  }
   
   .logo img {
-      display:none;
- }
+    display: none;
+  }
 }
 
+
 /*for desktops, a few styling tweaks*/
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .hero #slogan {
-    font-size: 36px;
-    margin-top: -140px;
-  }
   .navbar {
     opacity: 0.7;
   }
   .logo {
     font-size: 36px;
+    height:348px;
   }
   .feature {
     min-height: 200px;
   }
   .feature p {
-    margin-top: -50px;
     font-size: 24px;
-}
+  }
+  .design p {
+    font-size: 32px;
+    margin-bottom: -30px;
+    padding-top: 60px;
+  }
   #allcupcakes {
-    padding: 40px;
+    padding: 30px 175px 0 175px;
   }
   #showfewercupcakes .btn {
     visibility: hidden;
   }
   #customorder img {
-    padding:0;
+    padding: 0;
   }
   #customorder p {
     margin-top: -215px;
@@ -547,7 +583,7 @@ a:hover {
   }
   .findus img {
     width: 100%;
-    padding:0 350px 50px 350px;
+    padding: 0 350px 50px 350px;
   }
   div #showalldates {
     text-align: center;
@@ -559,7 +595,6 @@ a:hover {
   }
   #title {
     font-size: 36px;
-    padding-top: 50px;
     padding-bottom: 20px;
   }
   .abouttext {
@@ -569,11 +604,14 @@ a:hover {
   .about img {
     margin: 0 auto;
     max-width: 200px;
-    padding:20px;
+    padding: 20px;
+  }
+  #about {
+    padding-top: 50px;
   }
   #aboutimage {
-    padding-top:75px;
-    padding-right:144px;
+    padding-top: 75px;
+    padding-right: 144px;
   }
   div #contact {
     font-size: 18px;
@@ -602,7 +640,9 @@ a:hover {
   }
 }
 
+
 /*for very large screens, increase height of sections for visual balance*/
+
 @media only screen and (min-width: 1200px) {
   .navbar-brand {
     min-height: 50px;
@@ -613,25 +653,27 @@ a:hover {
   .navbar {
     padding-top: 10px;
   }
-  .hero #slogan {
-    font-size: 48px;
-    color: #28170D;
-    margin-top: -70px;
-  }
-  .logo {
-    font-size: 48px;
-  }
+  
   .feature p {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  font-size: 28px;
-}
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 28px;
+  }
+  #allcupcakes {
+    padding:30px 175px 0 175px;
+  }
   #showfewercupcakes .btn {
     visibility: hidden;
   }
+  .design p {
+    font-size: 42px;
+    margin-bottom: -20px;
+    padding-top: 90px;
+  }
   .about {
-    min-height: 300px;
+    min-height: 380px;
     padding-bottom: 20px;
+    padding-top: 50px;
   }
   #customorder p {
     margin-top: -300px;
@@ -641,7 +683,7 @@ a:hover {
     padding-right: 700px;
   }
   #customorder img {
-    padding:0;
+    padding: 0;
   }
   .findus img {
     width: 100%;
@@ -665,15 +707,14 @@ a:hover {
   .about img {
     margin: 0 auto;
     max-width: 250px;
-    padding: 40px;
+    padding: 30px;
   }
   #aboutimage {
     padding-top: 45px;
-    padding-right:180px;
+    padding-right: 180px;
   }
   #title {
     font-size: 36px;
-    padding-top: 90px;
   }
   div #contact {
     font-size: 18px;
