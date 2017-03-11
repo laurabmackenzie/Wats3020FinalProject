@@ -29,7 +29,6 @@ body {
 .feature img {
   width: 100%
 }
-
 /*positioning and styling slogan*/
 .hero #slogan {
   text-align: center;
@@ -47,12 +46,13 @@ body {
   font-family: 'Cinzel', serif;
 }
 .feature {
-  min-height:50px;
+  min-height:125px;
   padding-top:20px;
 }
 .feature p {
   text-align: center;
   font-size: 12px;
+  padding: 0 40px 0 40px;
   color: #28170D;
   font-family: 'Playfair Display', serif;
 }
@@ -281,8 +281,12 @@ a:hover {
     font-family: 'Cinzel', serif;
     margin-top: -40px;
   }
+  .feature {
+    min-height:200px;
+  }
   .feature p {
-  font-size: 20px;
+  font-size: 16px;
+  padding: 25px 160px 0 160px;
 }
 .design p {
   font-size: 24px;
@@ -356,11 +360,12 @@ a:hover {
   .logo {
     font-size: 24px;
   }
+  .feature {
+    min-height: 200px;
+  }
   .feature p {
-  text-align: center;
+  padding-top: 20px;
   font-size: 18px;
-  color: #28170D;
-  font-family: 'Cinzel', serif;
 }
   
   #allcupcakes {
@@ -470,6 +475,15 @@ a:hover {
   }
   
 }
+@media only screen and (min-width: 768px) and (orientation:landscape) {
+  .feature {
+    min-width: 50px;
+  }
+  .feature p {
+    font-size: 24px;
+  }
+}
+
 /*setting header image as non-scrolling backgroud on desktop and large screens only and hiding current hero*/
 @media only screen and (min-width: 992px) {
   
@@ -508,6 +522,13 @@ a:hover {
   .logo {
     font-size: 36px;
   }
+  .feature {
+    min-height: 200px;
+  }
+  .feature p {
+    margin-top: -50px;
+    font-size: 24px;
+}
   #allcupcakes {
     padding: 40px;
   }
@@ -600,6 +621,11 @@ a:hover {
   .logo {
     font-size: 48px;
   }
+  .feature p {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-size: 28px;
+}
   #showfewercupcakes .btn {
     visibility: hidden;
   }
